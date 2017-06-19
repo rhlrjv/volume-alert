@@ -93,7 +93,7 @@ function drawLoop(time) {
     canvasContext.fillStyle = meter.checkClipping() ? 'red' : 'green'
 
     // draw a bar based on the current volume
-    canvasContext.fillRect(0, 0, meter.volume * width * 1.4, height);
+    canvasContext.fillRect(0, 0, meter.volume * width * 2, height);
 
     // set up the next visual callback
     rafID = window.requestAnimationFrame(drawLoop);
